@@ -34,6 +34,7 @@ signupForm.addEventListener("submit", (e) => {
             firebase.database().ref('users/' + user.uid).set({
                 name: name,
                 email: email,
+                password: password,
             });
 
             // Redirect or show a success message
